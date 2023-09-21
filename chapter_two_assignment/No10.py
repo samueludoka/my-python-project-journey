@@ -21,3 +21,5 @@ if num2 > num1 and num2:
 	print("num2 is the highest number")
 if num3 > num2 and num1:
 	print("num1 is the highest number")
+
+# refactor to use if-elif-else selection statement
