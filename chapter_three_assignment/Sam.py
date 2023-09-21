@@ -1,5 +1,5 @@
 x = 2
-y = 3
+y = 3e
 print('X = ',x)
 print('value of',x, '+', 'is',(x + x))
 print('x =')
