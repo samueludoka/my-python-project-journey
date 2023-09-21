@@ -24,3 +24,5 @@ if num2 > num1 and num3:
 	print('num2 is the highest number')
 if num3 > num1 and num2:
 	print('num3 is the highest number')
+
+# this condition is wrong, pls refactor
