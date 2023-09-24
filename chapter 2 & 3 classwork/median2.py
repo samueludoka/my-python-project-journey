@@ -14,7 +14,7 @@ else:
 
 print(mid)
 sum = 0
-number = [10,20,15,25,5,30,35,20,10,20]
+number = [10, 20, 15, 25, 5, 30, 35, 20, 10, 20]
 for k in number:
     sum += k
     mean = sum / l
