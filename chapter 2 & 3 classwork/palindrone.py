@@ -14,4 +14,4 @@ def is_palindrone(number):
             return True
         else:
             return False
-print(is_palindrone(567645))
+print(is_palindrone(121))

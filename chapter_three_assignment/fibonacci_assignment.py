@@ -7,5 +7,5 @@ def series(number):
         x = y
         y = sumz
         sumz = x + y
-print(series(50))
+series(90)
 

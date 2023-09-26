@@ -110,16 +110,16 @@
 # print(average)
 
 
-# count = 1
-# total = 0
-# while count <= 10:
-#     score = int(input("Enter student score: "))
-#     total += score
-#     count += 1
-# average = total / count
-# print(f"the total of scores by the student is {total} \ the average score is {average}")
+count = 1
+total = 0
+while count <= 10:
+    score = int(input("Enter student score: "))
+    total += score
+    count += 1
+average = total / count
+print(f"the total of scores by the student is {total} \ the average score is {average}")
 
-
+#
 # count = 0
 # total = 0
 # score = int(input("Enter score: "))
@@ -131,8 +131,8 @@
 # average = total / count
 # print(f"the average is {average}")
 
- for c in "sikiru":
-     print(c, "*")
+ # for c in "sikiru":
+ #     print(c, "*")
 
 
 # for i in range(10):
