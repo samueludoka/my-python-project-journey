@@ -21,16 +21,16 @@
 
 
 
-# language = input("Enter your language")
-# match language:
-#     case "Yoruba":
-#         print("Welcome to ibadan")
-#     case "ibo":
-#         print("Welcome to anambra")
-#     case "hausa":
-#         print("welcome to kano")
-#     case _:
-#         print("You are not from here")
+language = input("Enter your language")
+match language:
+    case "Yoruba":
+        print("Welcome to ibadan")
+    case "ibo":
+        print("Welcome to anambra")
+    case "hausa":
+        print("welcome to kano")
+    case _:
+        print("You are not from here")
 
 
 
@@ -109,15 +109,15 @@
 # average = sum / 10
 # print(average)
 
-
-count = 1
-total = 0
-while count <= 10:
-    score = int(input("Enter student score: "))
-    total += score
-    count += 1
-average = total / count
-print(f"the total of scores by the student is {total} \ the average score is {average}")
+#
+# count = 1
+# total = 0
+# while count <= 10:
+#     score = int(input("Enter student score: "))
+#     total += score
+#     count += 1
+# average = total / count
+# print(f"the total of scores by the student is {total} \ the average score is {average}")
 
 #
 # count = 0

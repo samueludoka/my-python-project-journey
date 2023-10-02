@@ -12,3 +12,8 @@ print(len(basket))
 basket = [4, "one", 9, "ok"]
 for value in basket:
     print(value)
+
+
+
+
+
