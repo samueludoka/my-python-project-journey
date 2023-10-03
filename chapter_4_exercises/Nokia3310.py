@@ -100,17 +100,43 @@ def call_register():
         1 -> last call duration
         2 -> All calls cost
         3 -> Clear timer
-        4 -> Return to main menu
+        4 -> Return to call menu
+        5 -> return to main menu
         """)
         show_call_cost = int(input("enter show call cost menu"))
+        if show_call_cost == 1:
+            print("last call duration")
+        elif show_call_cost == 2:
+            print("All calls duration")
+        elif show_call_cost == 3:
+            print("clear timers")
+        elif show_call_cost == 4:
+            print(call_register())
+        elif show_call_cost == 5:
+            print(nokia_function())
+    elif call_register_menu == 7:
+        print("call cost setting")
+        print(""""
+        1 -> Call cost setting
+        2 -> show costs in
+        3 -> return to call setting
+        4 -> return to main menu
+        """)
+        call_cost_setting = int(input("enter call cost setting option"))
+        if call_cost_setting == 1:
+            print("call cost setting")
+        elif call_cost_setting == 2:
+            print("show call cost setting")
+        elif call_cost_setting == 3:
+            print(call_register())
+        elif call_cost_setting == 4:
+            print(nokia_function())
+    elif call_register_menu == 8:
+        print("prepaid credit")
+    elif call_register_menu == 9:
+        print("message validity")
 
 
-    elif call_register_menu == 3:
-        print("dialled numbers")
-    elif call_register_menu == 4:
-        print("erase recent calls")
-    elif call_register_menu == 5:
-        print("show call duration")
 
 
 
@@ -176,6 +202,36 @@ def messages():
 
 def Tones():
     print("Tones")
+    print(""""
+        1 -> Ringing tone
+        2 -> Ringing volume
+        3 -> Incoming call alert
+        4 -> Composer
+        5 -> Message alert tone
+        6 -> Keypad tones
+        7 -> Warning and game tones
+        8 -> Vibrating alert
+        9 -> Screen saver
+        """)
+    tones = int(input("enter tones menu"))
+    if tones == 1:
+        print("ringing tone")
+    elif tones == 2:
+        print("ringing volume")
+    elif tones == 3:
+        print("incoming call alert")
+    elif tones == 4:
+        print("composer")
+    elif tones == 5:
+        print("message alert tone")
+    elif tones == 6:
+        print("keypad tones")
+    elif tones == 7:
+        print("warning and game tones")
+    elif tones == 8:
+        print("vibrating alert")
+    elif tones == 9:
+        print("screen saver")
 
 
 def phone_Book():
@@ -184,6 +240,27 @@ def phone_Book():
 
 def settings():
     print("settings")
+    print(""""
+        1 -> Call settings
+        2 -> Phone settings
+        3 -> security settings
+        4 -> Restore factory settings
+        """)
+    setting = int(input("settings menu"))
+        if setting == 1:
+            print("call setting")
+            print(""""
+            1 -> Automatic redial
+            2 -> Speed dialling
+            3 -> Call waiting options
+            4 -> Own number sending
+            5 -> Phone line in use
+            6 -> Automatic answer
+            7 -> return to setting
+            8 -> return main menu
+            """)
+
+
 
 
 def call_divert():
