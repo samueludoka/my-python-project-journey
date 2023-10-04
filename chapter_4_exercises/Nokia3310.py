@@ -14,37 +14,41 @@ def nokia_function():
     12 -> Profiles
     13 -> Sim services
             """)
-    option = int(input("Select an option: "))
-    if option == 1:
+    option = input("Select an option: ")
+    if option == '1':
         print(phone_book())
-    elif option == 2:
+    elif option == '2':
         print(messages())
-    elif option == 3:
+    elif option == '3':
         print(chat())
-    elif option == 4:
+    elif option == '4':
         print(call_register())
-    elif option == 5:
+    elif option == '5':
         print(Tones())
-    elif option == 6:
+    elif option == '6':
         print(settings())
-    elif option == 7:
+    elif option == '7':
         print(call_divert())
-    elif option == 8:
+    elif option == '8':
         print(games())
-    elif option == 9:
+    elif option == '9':
         print(calculator())
-    elif option == 10:
+    elif option == '10':
         print(remainder())
-    elif option == 11:
+    elif option == '11':
         print(clock())
-    elif option == 12:
+    elif option == '12':
         print(profiles())
-    elif option == 13:
+    elif option == '13':
         print(sim_services())
 
 
 def chat():
+    print("pres 1 to return to main menu")
     print("Chat")
+    chats = (input("chat menu"))
+    if chats == '1':
+        print(nokia_function())
 
 
 def call_register():
@@ -58,17 +62,18 @@ def call_register():
         6 -> Show call costs
         7 -> Call cost settings
         8 -> Prepaid credit
+        9 -> return to main menu
     """)
-    call_register_menu = int(input("enter call register options"))
-    if call_register_menu == 1:
+    call_register_menu = (input("enter call register options"))
+    if call_register_menu == '1':
         print("missed calls")
-    elif call_register_menu == 2:
-        print("recieved calls")
-    elif call_register_menu == 3:
+    elif call_register_menu == '2':
+        print("received calls")
+    elif call_register_menu == '3':
         print("dialled numbers")
-    elif call_register_menu == 4:
+    elif call_register_menu == '4':
         print("erase recent calls")
-    elif call_register_menu == 5:
+    elif call_register_menu == '5':
         print("show call duration")
         print(""""
         1 -> Last call duration
@@ -79,22 +84,22 @@ def call_register():
         6 -> Return to call menu
         7 -> Return to main menu
         """)
-        show_call_duration = int(input("show call duration options"))
-        if show_call_duration == 1:
+        show_call_duration = (input("show call duration options"))
+        if show_call_duration == '1':
             print("Last call duration")
-        elif show_call_duration == 2:
+        elif show_call_duration == '2':
             print("All calls duration")
-        elif show_call_duration == 3:
+        elif show_call_duration == '3':
             print("Received calls duration")
-        elif show_call_duration == 4:
+        elif show_call_duration == '4':
             print("Dialled calls duration")
-        elif show_call_duration == 5:
+        elif show_call_duration == '5':
             print("Clear timers")
-        elif show_call_duration == 6:
+        elif show_call_duration == '6':
             print(call_register())
-        elif show_call_duration == 7:
+        elif show_call_duration == '7':
             print(nokia_function())
-    elif call_register_menu == 6:
+    elif call_register_menu == '6':
         print("show call cost")
         print(""""
         1 -> last call duration
@@ -103,18 +108,18 @@ def call_register():
         4 -> Return to call menu
         5 -> return to main menu
         """)
-        show_call_cost = int(input("enter show call cost menu"))
-        if show_call_cost == 1:
+        show_call_cost = (input("enter show call cost menu"))
+        if show_call_cost == '1':
             print("last call duration")
-        elif show_call_cost == 2:
+        elif show_call_cost == '2':
             print("All calls duration")
-        elif show_call_cost == 3:
+        elif show_call_cost == '3':
             print("clear timers")
-        elif show_call_cost == 4:
+        elif show_call_cost == '4':
             print(call_register())
-        elif show_call_cost == 5:
+        elif show_call_cost == '5':
             print(nokia_function())
-    elif call_register_menu == 7:
+    elif call_register_menu == '7':
         print("call cost setting")
         print(""""
         1 -> Call cost setting
@@ -122,23 +127,19 @@ def call_register():
         3 -> return to call setting
         4 -> return to main menu
         """)
-        call_cost_setting = int(input("enter call cost setting option"))
-        if call_cost_setting == 1:
+        call_cost_setting = (input("enter call cost setting option"))
+        if call_cost_setting == '1':
             print("call cost setting")
-        elif call_cost_setting == 2:
+        elif call_cost_setting == '2':
             print("show call cost setting")
-        elif call_cost_setting == 3:
+        elif call_cost_setting == '3':
             print(call_register())
-        elif call_cost_setting == 4:
+        elif call_cost_setting == '4':
             print(nokia_function())
-    elif call_register_menu == 8:
+    elif call_register_menu == '8':
         print("prepaid credit")
-    elif call_register_menu == 9:
-        print("message validity")
-
-
-
-
+    elif call_register_menu == '9':
+        print(nokia_function())
 
 
 def messages():
@@ -154,50 +155,81 @@ def messages():
         8 -> Info service
         9 -> Voice mailbox number
         10 -> service command editor
-        11 -> message validator
-        12 -> return to main menu
+        11 -> return to main menu
         """)
 
-    message_menu = int(input("enter message option"))
-    if message_menu == 1:
+    message_menu = input("enter message option")
+    if message_menu == '1':
         print("write message")
-    elif message_menu == 2:
+    elif message_menu == '2':
         print("inbox")
-    elif message_menu == 3:
+    elif message_menu == '3':
         print("outbox")
-    elif message_menu == 4:
+    elif message_menu == '4':
         print("picture messages")
-    elif message_menu == 5:
+    elif message_menu == '5':
         print("Templates")
-    elif message_menu == 6:
+    elif message_menu == '6':
         print("smileys")
-    elif message_menu == 7:
+    elif message_menu == '7':
         print("message setting")
-        print(""""
+        print("""
             1 -> Set
             2 -> Common
             3 -> return to message menu
             4 -> return to main menu
             """)
-        message_setting = int(input("enter message setting"))
-        if message_setting == 1:
-            print("set")
-        elif message_setting == 2:
-            print("common")
-        elif message_setting == 3:
-            print(messages())
-        elif message_setting == 4:
-            print(nokia_function())
+        message_setting = input("message setting menu")
+        if message_setting == '1':
+            print("set_input")
+            print("""
+            1 -> message center number
+            2 -> message sent as
+            3 -> message validity
+            4 -> return to message
+            5 -> return to main menu
+            """)
+            set_input = input("enter set_input menu")
+            if set_input == '1':
+                print("message center number")
+            elif set_input == '2':
+                print("message sent as")
+            elif set_input == '3':
+                print("message validity")
+            elif set_input == '4':
+                print(messages())
+            elif set_input == '5':
+                print(nokia_function())
 
-    elif message_menu == 8:
+
+        elif message_setting == '2':
+            print("common")
+            print(""""
+            1 -> delivery reports
+            2 -> reply via same centre
+            3 -> character support
+            4 -> return to message
+            5 -> return to main menu
+            """)
+            common = input("enter common menu: ")
+            if common == '1':
+                print("delivery report")
+            elif common == '2':
+                print("reply via same centre")
+            elif common == '3':
+                print("character support")
+            elif common == '4':
+                print(messages())
+            elif common == '5':
+                print(nokia_function())
+
+    elif message_menu == '8':
         print("service info")
-    elif message_menu == 9:
-        print("service")
-    elif message_menu == 10:
+    elif message_menu == '9':
+        print("voice mailbox number")
+    elif message_menu == '10':
         print("service command editor")
-    elif message_menu == 11:
-        print("message validator")
-    elif message_menu == 12:
+    elif message_menu == '11':
         print(nokia_function())
 
 
@@ -215,31 +247,27 @@ def Tones():
         9 -> Screen saver
         10 -> return to main menu
         """)
-    tones = int(input("enter tones menu"))
-    if tones == 1:
+    tones = (input("enter tones menu"))
+    if tones == '1':
         print("ringing tone")
-    elif tones == 2:
+    elif tones == '2':
         print("ringing volume")
-    elif tones == 3:
+    elif tones == '3':
         print("incoming call alert")
-    elif tones == 4:
+    elif tones == '4':
         print("composer")
-    elif tones == 5:
+    elif tones == '5':
         print("message alert tone")
-    elif tones == 6:
+    elif tones == '6':
         print("keypad tones")
-    elif tones == 7:
+    elif tones == '7':
         print("warning and game tones")
-    elif tones == 8:
+    elif tones == '8':
         print("vibrating alert")
-    elif tones == 9:
+    elif tones == '9':
         print("screen saver")
-    elif tones == 10:
+    elif tones == '10':
         print(nokia_function())
-
-
-def phone_Book():
-    print("phone book")
 
 
 def settings():
@@ -247,12 +275,12 @@ def settings():
     print(""""
         1 -> Call settings
         2 -> Phone settings
-        3 -> Restore factory settings
-        4 -> return to setting
+        3 -> security settings
+        4 -> Restore factory settings
         5 -> return to main menu
         """)
-    setting_menu = int(input("settings menu"))
-    if setting_menu == 1:
+    setting_menu = input("settings menu")
+    if setting_menu == '1':
         print("call setting")
         print(""""
         1 -> Automatic redial
@@ -264,24 +292,24 @@ def settings():
         7 -> return to setting
         8 -> return main menu
         """)
-        call_setting = int(input("call setting menu"))
-        if call_setting == 1:
+        call_setting = input("call setting menu")
+        if call_setting == '1':
             print("Automatic redial")
-        elif call_setting == 2:
+        elif call_setting == '2':
             print("Speed dialling")
-        elif call_setting == 3:
+        elif call_setting == '3':
             print("Call waiting options")
-        elif call_setting == 4:
+        elif call_setting == '4':
             print("Own number sending")
-        elif call_setting == 5:
+        elif call_setting == '5':
             print("Phone line in use")
-        elif call_setting == 6:
+        elif call_setting == '6':
             print("Automatic answer")
-        elif call_setting:
+        elif call_setting == '7':
             print(settings())
-        elif call_setting:
+        elif call_setting == '8':
             print(nokia_function())
-    elif setting_menu == 2:
+    elif setting_menu == '2':
         print("phone setting")
         print(""""
         1 -> Language
@@ -290,60 +318,101 @@ def settings():
         4 -> Network selection
         5 -> Lights
         6 -> Confirm SIM service actions
-        8 -> return to settings
-        9 -> return to main menu
+        7 -> return to settings
+        8 -> return to main menu
         """)
-        phone_setting = int(input("phone setting menu"))
-        if phone_setting == 1:
+        phone_setting = input("phone setting menu")
+        if phone_setting == '1':
             print("language")
-        elif phone_setting == 2:
+        elif phone_setting == '2':
             print("call info display")
-        elif phone_setting == 3:
+        elif phone_setting == '3':
             print("welcome note")
-        elif phone_setting == 4:
+        elif phone_setting == '4':
             print("network selection")
-        elif  phone_setting == 6:
+        elif phone_setting == '5':
             print("lights")
-        elif phone_setting == 7:
+        elif phone_setting == '6':
             print("Confirm SIM service actions")
-        elif phone_setting == 8:
+        elif phone_setting == '7':
             print(settings())
-        elif phone_setting == 9:
+        elif phone_setting == '8':
             print(nokia_function())
-    elif setting_menu == 3:
+    elif setting_menu == '3':
+        print("security settings")
+        print(""""
+        1 -> pin code request
+        2 -> call baring service
+        3 -> fixed dialling
+        4 -> closed user group
+        5 -> phone security
+        6 -> change access codes
+        7 -> return to settings
+        8 -> return to main menu
+        """)
+        security = input("security settings menu")
+        if security == '1':
+            print("pin code request")
+        elif security == '2':
+            print("call baring service")
+        elif security == '3':
+            print("fixed dialling")
+        elif security == '4':
+            print("closed user group")
+        elif security == '5':
+            print("phone security")
+        elif security == '6':
+            print("change access codes")
+        elif security == '7':
+            print(settings())
+        elif security == '8':
+            print(nokia_function())
+    elif setting_menu == '4':
         print("restore factory settings")
+    elif setting_menu == '5':
+        print(nokia_function())
+
 
 
 
 def call_divert():
     print("call divert")
-    divert = int(input("enter call divert menu"))
-    if divert == 1:
+    print("press 1 -> to go back to menu")
+    divert = (input("enter call divert menu"))
+    if divert == '1':
         print(nokia_function())
+
+
 
 
 def games():
     print("games")
     print("press 1 -> to go back to menu")
-    game = int(input("games menu"))
-    if game == 1:
+    game = (input("games menu"))
+    if game == '1':
         print(nokia_function())
+
+
 
 
 def calculator():
     print("calculator")
     print("press 1 -> to go back to menu")
-    calculators = int(input("calculator menu"))
-    if calculators == 1:
+    calculators = (input("calculator menu"))
+    if calculators == '1':
         print(nokia_function())
+
+
 
 
 def remainder():
     print("remainder")
     print("press 1 -> to go back to menu")
-    remainders = int(input("remainder menu"))
-    if remainders == 1:
+    remainders = (input("remainder menu"))
+    if remainders == '1':
         print(nokia_function())
+
+
 
 
 def clock():
@@ -357,37 +426,36 @@ def clock():
     6 -> Auto update of date and time
     7 -> return to menu
     """)
-    clocks = int(input("clock menu"))
-    if clocks == 1:
+    clocks = (input("clock menu"))
+    if clocks == '1':
         print("alarm clock")
-    elif clocks == 2:
+    elif clocks == '2':
         print("clock setting")
-    elif clocks == 3:
+    elif clocks == '3':
         print("date setting")
-    elif clocks == 4:
+    elif clocks == '4':
         print("stopwatch")
-    elif clocks == 5:
+    elif clocks == '5':
         print("countdown timer")
-    elif clocks == 6:
+    elif clocks == '6':
         print("Auto update of date and time")
-    elif clocks == 7:
+    elif clocks == '7':
         print(nokia_function())
 
 
 def profiles():
     print("profiles")
     print("press 1 -> to go back to menu")
-    profile = int(input("profile menu"))
-    if profile == 1:
+    profile = (input("profile menu"))
+    if profile == '1':
         print(nokia_function())
-
 
 
 def sim_services():
     print("sim services")
     print("press 1 -> to go back to menu")
-    sim = int(input("sim services menu"))
-    if sim == 1:
+    sim = (input("sim services menu"))
+    if sim == '1':
         print(nokia_function())
 
 
@@ -405,43 +473,43 @@ def phone_book():
     9 -> speed dials
     10 -> Voice tags
     11 -> Go back to main menu""")
-    phone_book_menu = int(input("enter option: "))
-    if phone_book_menu == 1:
+    phone_book_menu = (input("enter option: "))
+    if phone_book_menu == '1':
         print("search")
-    elif phone_book_menu == 2:
+    elif phone_book_menu == '2':
         print("Service Nos")
-    elif phone_book_menu == 3:
+    elif phone_book_menu == '3':
         print("Add name")
-    elif phone_book_menu == 4:
+    elif phone_book_menu == '4':
         print("Erase")
-    elif phone_book_menu == 5:
+    elif phone_book_menu == '5':
         print("Edit")
-    elif phone_book_menu == 6:
+    elif phone_book_menu == '6':
         print("Assign tone")
-    elif phone_book_menu == 7:
+    elif phone_book_menu == '7':
         print("Send b'card")
-    elif phone_book_menu == 8:
+    elif phone_book_menu == '8':
         print("option")
         print(""""
             1 -> Type of view
             2 -> Memory status 
-            3 -> go back to phone book
-            4 -> go back to main menu   
+            3 -> return to phone book
+            4 -> return to main menu   
         """)
-        option = int(input("enter option"))
-        if option == 1:
+        option = (input("enter option"))
+        if option == '1':
             print("Type of view")
-        elif option == 2:
+        elif option == '2':
             print("memory status")
-        elif option == 3:
+        elif option == '3':
             print(phone_book())
-        elif option == 4:
+        elif option == '4':
             print(nokia_function())
-    elif phone_book_menu == 9:
+    elif phone_book_menu == '9':
         print("speed dials")
-    elif phone_book_menu == 10:
+    elif phone_book_menu == '10':
         print("voice tags")
-    elif phone_book_menu == 11:
+    elif phone_book_menu == '11':
         print(nokia_function())
 
 
