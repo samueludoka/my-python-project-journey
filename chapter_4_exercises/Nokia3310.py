@@ -1,3 +1,4 @@
+# why do u have to print ur menu, cant u pust the message in your input function ??
 def nokia_function():
     print("""
     1 -> Phone book
