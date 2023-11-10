@@ -1,30 +1,27 @@
 def last_to_dictionary(score):
-    String_list = ['apple', 'banana', 'coconut']
-    score = []
-    for num in String_list:
+    for num in score:
         for numb in num:
             if numb in num[0] == 0:
                 break
-                score.append(numb)
 
     return {num[0]: num}
 
 
 def two_list_to_dictionary(word: str, score: int):
-    input1 = ['a', 'b', 'c', 'd', 'e']
-    input2 = [1, 2, 3, 4, 5]
-    for i in input1:
+    for i in word:
         pass
-    for j in input2:
+    for j in score:
         pass
     return {i: j}
 
 
+# print(two_list_to_dictionary(['a', 'b', 'C', 'd', 'e'],[1, 2, 3, 4, 5]))
+
+
 def difference_in_smallest_and_largest_in_a_list(score):
-    score_element = [70, 75, 20, 30, 15, 5, 40, 25, 40, 35]
     min = 0,
     max = 0
-    for i in score_element:
+    for i in score:
         if i > max == 0:
             max = i
         elif i < min == 0:
@@ -34,9 +31,8 @@ def difference_in_smallest_and_largest_in_a_list(score):
 
 
 def frequency(scores):
-    elements = [1, 1, 1, 1, 2, 2, 2, 2, 5, 5, 5, 6, 7]
     score = []
-    for x in elements:
+    for x in scores:
         if x >= 2 == 0:
             score.append(x)
 
@@ -44,8 +40,7 @@ def frequency(scores):
 
 
 def remove_multiple_String(word):
-    String_input = ["'ABC','xyz'", 'abc', 'xyz']
-    for x in String_input:
+    for x in word:
         for y in x:
             pass
 

@@ -6,8 +6,8 @@ from test.group_list_test import assertEquals
 
 class Test(TestCase):
     def test_list_to_dictionary(self):
-        score = ['apple', 'banana', 'coconut']
-        expected = {'a': 'apple', 'b': 'banana', 'c': 'coconut'}
+        score = ['apple', 'banana', 'coconut', 'orange']
+        expected = {'a': 'apple', 'b': 'banana', 'c': 'coconut', 'o': 'orange'}
         result = list_to_dictionary.last_to_dictionary(score)
         assertEquals(expected, result)
 

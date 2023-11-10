@@ -7,7 +7,3 @@ class Account(unittest.TestCase):
         self.assertEqual(0, abigailAccount.get_balance())
         abigailAccount.deposit(3000)
         self.assertEqual(3000, abigailAccount.get_balance())
-
-
-if __name__ == '__main__':
-    unittest.main()
